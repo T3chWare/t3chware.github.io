@@ -1,9 +1,14 @@
-body {
-    font-family: 'Orbitron', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: 'Orbitron', sans-serif;
     color: #00ffcc;
     background-color: #0d0d0d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -49,6 +54,10 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
+main {
+    flex: 1;
+}
+
 section {
     padding: 2em 0;
 }
@@ -87,6 +96,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     border-top: 2px solid #00ffcc;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
 }
 
 /* Responsive Design */
